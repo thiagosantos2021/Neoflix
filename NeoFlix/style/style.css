@@ -1,0 +1,133 @@
+:root {
+    --cor1: #89bbbe;
+    --cor2: #d4a465;
+    --cor3: #3b627a;
+    --cor4: #097ee4;
+    --cor5: #098bd6;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .container{
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--cor4);
+    margin-right: 20px;
+}
+
+header img{
+    height: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 20px;
+    margin-right: 20px;
+    transition: .2s ease all;
+}
+
+header nav a:hover{
+    color: var(--cor4);
+}
+
+main .neo-banner{
+    display: flex;
+    background: url('/img/neo-banner.jpg');
+    background-color: var(--cor4);
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .btn-sign{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s ease all;
+    margin-bottom: 5px;
+}
+
+main .btn-sign:hover{
+    background-color: var(--cor5);
+    cursor: pointer;
+}
+
+.carrossel{
+    margin: 40px 20px 20px 20px;
+}
+
+.carrossel h2{
+    margin-bottom: 20px;
+    color: var(--cor5);  
+}
+
+.item h4{
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: var(--cor4);
+}
+
+.box-game{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+footer{
+    padding: 5px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-size: 10px;
+}
+ 
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .container nav{
+        margin-bottom: 20px;
+    }
+ }
