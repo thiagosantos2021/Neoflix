@@ -53,7 +53,7 @@ header nav a:hover{
 
 main .neo-banner{
     display: flex;
-    background: url('/img/neo-banner.jpg');
+    background: url('/NeoFlix/img/neo-banner.jpg');
     background-color: var(--cor4);
     height: 150px;
     background-position: center;
